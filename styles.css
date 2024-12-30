@@ -117,35 +117,6 @@
     }
   }
   
-  /* Animação do coração flutuante */
-  @keyframes coracaoAnimado {
-    0% {
-      transform: translateY(0) scale(1);
-    }
-    50% {
-      transform: translateY(-30px) scale(1.2);
-    }
-    100% {
-      transform: translateY(0) scale(1);
-    }
-  }
-  
-  /* Animação da estrela brilhante */
-  @keyframes estrelaBrilhando {
-    0% {
-      transform: translateY(0) scale(1);
-      opacity: 1;
-    }
-    50% {
-      transform: translateY(-10px) scale(1.5);
-      opacity: 0.8;
-    }
-    100% {
-      transform: translateY(0) scale(1);
-      opacity: 1;
-    }
-  }
-  
   /* Mensagens adicionais (parágrafos) */
 .mensagem-adicional {
   font-size: 1.2em;
@@ -159,12 +130,6 @@
   text-align: center;
   animation: fadeInUp 2s ease-out; /* Animação de entrada */
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Sombra suave para destacar o texto */
-}
-
-/* Aplique um efeito de hover para interação, se necessário */
-.mensagem-adicional:hover {
-  color: #ffb3c1; /* Cor mais suave ao passar o mouse */
-  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5); /* Brilho suave ao passar o mouse */
 }
 
 /* Para telas pequenas, como smartphones */
