@@ -31,7 +31,6 @@
     height: 200px;
     position: relative;
     display: inline-block;
-    clip-path: polygon(50% 0%, 0% 10%, 0% 70%, 50% 100%, 100% 70%, 100% 10%);
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Adicionando sombra */
   }
@@ -148,7 +147,7 @@
   /* Ajustando a largura do coração */
   .coracao-imagem {
       width: 150px;
-      height: 150px;
+      height: 100px;
   }
 
   /* Ajustando o tamanho da mensagem principal */
