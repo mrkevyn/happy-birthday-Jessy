@@ -167,3 +167,58 @@
   text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5); /* Brilho suave ao passar o mouse */
 }
 
+/* Para telas pequenas, como smartphones */
+@media screen and (max-width: 768px) {
+  body {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .container {
+      width: 90%;
+      max-width: 100%;
+  }
+
+  /* Ajustando a largura do coração */
+  .coracao-imagem {
+      width: 150px;
+      height: 150px;
+  }
+
+  /* Ajustando o tamanho da mensagem principal */
+  .mensagem {
+      font-size: 2.5em; /* Menor tamanho de fonte */
+  }
+
+  /* Ajustando o tamanho da submensagem */
+  .submensagem {
+      font-size: 1.2em;
+  }
+
+  /* Ajustando a mensagem adicional */
+  .mensagem-adicional {
+      font-size: 1em; /* Reduzindo o tamanho */
+      padding: 8px;
+  }
+}
+
+/* Para telas muito pequenas, como celulares em modo retrato */
+@media screen and (max-width: 480px) {
+  .coracao-imagem {
+      width: 120px;
+      height: 120px;
+  }
+
+  .mensagem {
+      font-size: 2em; /* Menor ainda em telas muito pequenas */
+  }
+
+  .submensagem {
+      font-size: 1em;
+  }
+
+  .mensagem-adicional {
+      font-size: 0.9em; /* Ajustando para telas pequenas */
+  }
+}
