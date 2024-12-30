@@ -24,6 +24,25 @@
     animation: fadeIn 2s ease-out;
     position: relative;
   }
+
+  /* Container do coração (imagem) */
+  .coracao-imagem {
+    width: 200px; /* Tamanho do coração */
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    clip-path: polygon(50% 0%, 0% 10%, 0% 70%, 50% 100%, 100% 70%, 100% 10%);
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Adicionando sombra */
+  }
+  
+  /* A imagem dentro do coração */
+  .coracao-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* A imagem vai se ajustar sem cortar */
+    object-position: center; /* Ajusta a posição da imagem dentro do coração */
+  }
   
   /* Coração */
   .coracao {
@@ -74,20 +93,6 @@
     color: #fce5cd;
     animation: slideIn 2s ease-out;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Estrela animada */
-  .estrela-animada {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border-radius: 50%;
-    animation: estrelaBrilhando 2s infinite ease-in-out;
-    box-shadow: 0 0 15px #fff, 0 0 25px #fff;
-    transform: translateX(-50%);
   }
   
   /* Animação de fade-in */
@@ -161,3 +166,4 @@
   color: #ffb3c1; /* Cor mais suave ao passar o mouse */
   text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5); /* Brilho suave ao passar o mouse */
 }
+
