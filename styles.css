@@ -144,10 +144,11 @@
       max-width: 100%;
   }
 
-  /* Ajustando a largura do coração */
+  /* Ajustando a largura do coração e movendo a imagem para baixo */
   .coracao-imagem {
       width: 150px;
       height: 100px;
+      margin-top: 20px; /* Adicionando margem superior para mover a imagem para baixo */
   }
 
   /* Ajustando o tamanho da mensagem principal */
@@ -172,6 +173,7 @@
   .coracao-imagem {
       width: 120px;
       height: 120px;
+      margin-top: 15px; /* Menos margem, pois a tela é menor */
   }
 
   .mensagem {
